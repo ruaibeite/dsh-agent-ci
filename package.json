@@ -1,0 +1,60 @@
+{
+  "name": "@ruaibeite/dsh-agent-ci",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Agent CI for DeepSeek Harness: turn real sessions into regression cases, replay them in isolated git worktrees, and verify tests, changed files, steps and tokens. Local-only.",
+  "license": "MIT",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "assets/icon-180.png",
+    "LICENSE",
+    "README.md",
+    "README.zh.md",
+    "test/"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-settings-general"
+      ]
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "agent-ci",
+    "eval",
+    "regression",
+    "testing",
+    "worktree"
+  ],
+  "scripts": {
+    "test": "node test/host.mjs && node test/render.mjs"
+  },
+  "author": "ruaibeite",
+  "homepage": "https://github.com/ruaibeite/dsh-agent-ci#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruaibeite/dsh-agent-ci.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ruaibeite/dsh-agent-ci/issues"
+  }
+}
