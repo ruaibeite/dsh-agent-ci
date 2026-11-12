@@ -5,6 +5,14 @@
 
 > 状态：v0.1.0。需要 DeepSeek Harness 0.2.x，且 `PATH` 中有 `git`。
 
+## 截图
+
+![浅色主题下的 Agent CI 设置页：已保存的回归用例与通过/失败徽章](assets/screenshot-agent-ci-light.png)
+![编辑回归用例：prompt、断言、模型与测试命令](assets/screenshot-agent-ci-form.png)
+![深色主题下的 Agent CI 设置页](assets/screenshot-agent-ci-dark.png)
+
+> 截图来自填充了合成用例与运行结果的演示 profile，不包含任何用户数据。
+
 ## 安装
 
 **从插件市场** —— 在 DSH 插件市场安装「Agent CI」，重启应用。

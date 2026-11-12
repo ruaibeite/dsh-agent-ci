@@ -6,6 +6,14 @@ Everything runs locally; results are kept as a comparable history.
 
 > Status: v0.1.0. Requires DeepSeek Harness 0.2.x and a `git` binary on `PATH`.
 
+## Screenshots
+
+![Agent CI settings page in light theme: saved regression cases with pass/fail badges](assets/screenshot-agent-ci-light.png)
+![Editing a regression case: prompt, assertions, model and test command](assets/screenshot-agent-ci-form.png)
+![Agent CI settings page in dark theme](assets/screenshot-agent-ci-dark.png)
+
+> Screenshots are taken from a demo profile seeded with synthetic cases and runs; no user data is shown.
+
 ## Install
 
 **From the plugin market** — install「Agent CI」from the DSH plugin market and restart the app.
